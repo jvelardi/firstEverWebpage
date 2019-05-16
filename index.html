@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/0bdfbc8307.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="personal.css">
+    <title>James Velardi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+    var a = " # # # #";
+    var b = "# # # # ";
+      console.log(a);
+      console.log(b);
+      console.log(a);
+      console.log(b);
+      console.log(a);
+      console.log(b);
+      console.log(a);
+      console.log(b);
+
+
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+
+        if (this.hash !== "") {
+
+          event.preventDefault();
+
+
+          var hash = this.hash;
+
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 700, function(){
+
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+
+
+    </script>
+</head>
+<body>
+
+<div id="home" class="homebackground">
+
+  <nav>
+    <a href="#home"><span class="fa fa-home fa-lg" aria-hidden="true"></span></a>
+      <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+          <div class="menu">
+
+              <a href="#about"><i class="fa fa-address-card-o" aria-hidden="true"></i>About</a>
+              <a href="#projects"><i class="fa fa-picture-o" aria-hidden="true"></i>Projects</a>
+              <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
+
+          </div>
+    </nav>
+  <div class="headercontent">
+    <h1 class="homeh1 animated fadeInDown">James Velardi</h1>
+    <h2 class="homeh2 animated fadeInUp">Web Developer In Training</h2>
+    <hr class="portfoliohr">
+    <ul class="centeralign animated fadeInUp">
+      <li><a href="https://www.facebook.com/james.velardi" target="blank"><img src="facebook.png" class="social"></a></li>
+      <li><a href="https://github.com/Boiledbiscuit" target="blank"><img src="github.png" class="social"></a></li>
+      <li><a href="https://twitter.com/BoiledBiscuit" target="blank"><img src="twitter1.png" class="social"></a></li>
+      <li><a href="https://www.instagram.com/boiledbiscuit/" target="blank"><img src="instagram.png" class="social"></a></li>
+    </ul>
+  </div>
+</div>
+<br>
+<div id="about">
+  <br>
+  <br>
+    <h1 class="centerh1">About</h1>
+      <hr class="portfoliohr">
+      <img src="myface1.jpg" class="profileimage">
+    <div class="bio">
+      <h4>Professional Objective</h4>
+      <p>
+        Hi, I am an aspiring web developer looking
+        to solve problems with technology.
+      </p>
+      <br>
+      <h4>What I do for fun</h4>
+        <p>
+          On my free time, I do martial arts, read books, and play video games.
+        </p>
+    </div>
+  </div>
+
+</div>
+<br>
+
+<div id="projects">
+      <br>
+      <br>
+      <h1 class="centerh1">Projects</h1>
+      <hr class="portfoliohr">
+      <a href="https://codepen.io/boiledbiscuit/pen/dzeMPW?q=dick+gregory&limit=all&type=type-pens" target="blank" class="tribute">
+
+      </a>
+    <div class="projectsright">
+    </div>
+
+    <div class="projectsleft">
+    </div>
+
+  <div class="projectsright">
+  </div>
+
+</div>
+<br><!--This page break prevents contents from projects showing up on top of contact div when click on contact link-->
+
+<div id="contact">
+      <br>
+      <br>
+      <h1 class="centerh1">Contact</h1>
+      <hr class="portfoliohr">
+      <h4 class="contacth4">Feel free to leave me some feedback.</h4>
+      <div class="container">
+        <form action="mailto:james.velardi@gmail.com"
+      method="post" enctype="text/plain">
+
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <textarea id="subject" name="subject" placeholder="Say Whatever! Don't Hold Back!" style="height:100px"></textarea>
+
+          <input type="submit" value="Submit">
+
+      </form>
+    </div>
+</div>
+<br>
+<footer class="footer">
+  <p style="text-align: center"><i class="fa fa-copyright" aria-hidden="true"></i>2017 James Velardi</p>
+</footer>
+
+  </body>
+</html>
